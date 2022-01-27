@@ -1,0 +1,78 @@
+99px-Wandering_Witch_The_Journey_of_Elaina_Logo.png  success!!
+Ambox_currentevent.svg  success!!
+280px-Majo_no_tabitabi_tokusouban_17.webp.png  success!!
+200px-%E4%BC%8A%E8%95%BE%E5%A8%9C.png  success!!
+200px-%E8%8A%99%E5%85%B0.png  success!!
+200px-%E6%89%AB%E5%B8%9A.png  success!!
+200px-%E8%89%BE%E4%B8%9D%E9%BB%9B%E5%84%BF.png  success!!
+200px-%E6%B2%99%E8%80%B6.png  success!!
+200px-%E8%89%BE%E5%A7%86%E5%A6%AE%E8%A5%BF%E4%BA%9A.png  success!!
+200px-%E8%89%BE%E7%BB%B4%E8%8E%89%E4%BA%9A.png  success!!
+200px-%E5%B8%AD%E6%8B%89.png  success!!
+200px-%E6%99%AE%E8%8E%89%E5%B8%8C%E6%8B%89.png  success!!
+200px-%E8%89%BE%E8%8E%89%E4%BA%9A%E5%BE%B7%E5%A6%AE.png  success!!
+200px-%E7%88%B1%E9%9C%B2%E5%A0%A4.png  success!!
+200px-%E8%8E%89%E5%A8%9C%E8%8E%89%E4%BA%9A.png  success!!
+200px-%E8%B7%AF%E9%9B%AA%E8%8F%88.png  success!!
+200px-%E8%8E%89%E5%85%B9%E8%95%BE%E7%89%B9.png  success!!
+200px-%E8%8E%AB%E5%A6%AE%E5%8D%A1.png  success!!
+200px-%E5%8D%A1%E8%8E%B2.png  success!!
+200px-%E9%9B%AA%E4%BC%A6.png  success!!
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/adapters.py", line 439, in send
+    resp = conn.urlopen(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 755, in urlopen
+    retries = retries.increment(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/util/retry.py", line 532, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/packages/six.py", line 769, in reraise
+    raise value.with_traceback(tb)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 699, in urlopen
+    httplib_response = self._make_request(
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 445, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/urllib3/connectionpool.py", line 440, in _make_request
+    httplib_response = conn.getresponse()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 1374, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 318, in begin
+    version, status, reason = self._read_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/http/client.py", line 287, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+urllib3.exceptions.ProtocolError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/tian/Documents/python/爬虫/regular_expression.py", line 18, in <module>
+    img_data = requests.get(url=src,headers=headers).content
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/api.py", line 75, in get
+    return request('get', url, params=params, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/api.py", line 61, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/sessions.py", line 542, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/sessions.py", line 655, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/requests/adapters.py", line 498, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
